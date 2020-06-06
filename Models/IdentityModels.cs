@@ -1,8 +1,10 @@
-﻿using System.Data.Entity;
+﻿using System.Collections.Generic;
+using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using OIDt.Models.DB;
 
 namespace OIDt.Models
 {
@@ -20,6 +22,15 @@ namespace OIDt.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet <Users> Userss { get; set; }
+        public DbSet<CreditsPurchase> CreditsPurchases { get; set; }
+        public DbSet<GameStarts> GameStarts { get; set; }
+        public DbSet<ItemPurchases> ItemPurchases { get; set; }
+        public DbSet<UserData> UserDatas { get; set; }
+        public DbSet<StartStages> StartStages { get; set; }
+        public DbSet<EndStages> EndStages { get; set; }
+
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

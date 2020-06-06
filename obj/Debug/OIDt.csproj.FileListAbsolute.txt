@@ -59,7 +59,6 @@ C:\Users\grjck\source\repos\OIDt\bin\System.Web.Razor.xml
 C:\Users\grjck\source\repos\OIDt\bin\System.Web.WebPages.xml
 C:\Users\grjck\source\repos\OIDt\bin\System.Web.WebPages.Deployment.xml
 C:\Users\grjck\source\repos\OIDt\bin\System.Web.WebPages.Razor.xml
-C:\Users\grjck\source\repos\OIDt\obj\Debug\OIDt.csprojAssemblyReference.cache
 C:\Users\grjck\source\repos\OIDt\obj\Debug\OIDt.csproj.CoreCompileInputs.cache
 C:\Users\grjck\source\repos\OIDt\obj\Debug\OIDt.csproj.CopyComplete
 C:\Users\grjck\source\repos\OIDt\obj\Debug\OIDt.dll

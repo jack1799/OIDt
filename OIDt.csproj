@@ -174,11 +174,24 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Migrations\202006061038112_Init.cs" />
+    <Compile Include="Migrations\202006061038112_Init.Designer.cs">
+      <DependentUpon>202006061038112_Init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\DB\LoadData.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\DB\CreditsPurchase.cs" />
+    <Compile Include="Models\DB\EndStages.cs" />
+    <Compile Include="Models\DB\GameStarts.cs" />
+    <Compile Include="Models\DB\ItemPurchases.cs" />
+    <Compile Include="Models\DB\StartStages.cs" />
+    <Compile Include="Models\DB\UserData.cs" />
+    <Compile Include="Models\DB\Users.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -280,6 +293,11 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202006061038112_Init.resx">
+      <DependentUpon>202006061038112_Init.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
