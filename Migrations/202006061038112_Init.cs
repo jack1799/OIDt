@@ -12,7 +12,7 @@ namespace OIDt.Migrations
                 c => new
                     {
                         CreditsId = c.Int(nullable: false, identity: true),
-                        EventDate = c.Int(nullable: false),
+                        EventDate = c.String(),
                         Name = c.String(),
                         Price = c.Int(nullable: false),
                         Income = c.Int(nullable: false),
@@ -35,7 +35,7 @@ namespace OIDt.Migrations
                 c => new
                     {
                         EndId = c.Int(nullable: false, identity: true),
-                        EventDate = c.Int(nullable: false),
+                        EventDate = c.String(),
                         Stage = c.Int(nullable: false),
                         Win = c.Boolean(nullable: false),
                         Time = c.Int(nullable: false),
@@ -51,8 +51,7 @@ namespace OIDt.Migrations
                 c => new
                     {
                         GameId = c.Int(nullable: false, identity: true),
-                        EventDate = c.Int(nullable: false),
-                        Stage = c.Int(nullable: false),
+                        EventDate = c.String(),
                         UserId = c.String(maxLength: 128),
                     })
                 .PrimaryKey(t => t.GameId)
@@ -64,7 +63,7 @@ namespace OIDt.Migrations
                 c => new
                     {
                         ItemId = c.Int(nullable: false, identity: true),
-                        EventDate = c.Int(nullable: false),
+                        EventDate = c.String(),
                         Item = c.String(),
                         Price = c.Int(nullable: false),
                         UserId = c.String(maxLength: 128),
@@ -101,7 +100,7 @@ namespace OIDt.Migrations
                 c => new
                     {
                         StartId = c.Int(nullable: false, identity: true),
-                        EventDate = c.Int(nullable: false),
+                        EventDate = c.String(),
                         Stage = c.Int(nullable: false),
                         UserId = c.String(maxLength: 128),
                     })
@@ -114,7 +113,7 @@ namespace OIDt.Migrations
                 c => new
                     {
                         DataId = c.Int(nullable: false, identity: true),
-                        EventDate = c.Int(nullable: false),
+                        EventDate = c.String(),
                         Gender = c.String(),
                         Age = c.Int(nullable: false),
                         Country = c.String(),
